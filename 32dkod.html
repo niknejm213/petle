@@ -1,0 +1,65 @@
+<html>
+<head>
+	<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+</head>
+<body>
+
+<textarea cols="76" rows="40">
+
+#include &lt;cstdlib&gt;
+#include &lt;iostream&gt;
+#include &lt;windows.h&gt;
+
+using namespace std;
+
+void gotoxy(int x, int y)
+{
+COORD coord;
+coord.X = x;
+coord.Y = y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
+int main(int argc, char *argv[])
+{
+system("chcp 1250"); // aby działały polskie litery
+int x,y,D_wes;
+
+cout&lt;&lt;" Podaj zmienną (kolumnę ekranu) x=";
+cin&gt;&gt;x;
+cout&lt;&lt;" Podaj zmienną (wiersz ekranu) y=";
+cin&gt;&gt;y;
+cout&lt;&lt;" Podaj długość linii D=";
+cin&gt;&gt;D_wes; // zmienna z trzema literami
+
+
+
+for (int i=0;i&lt;=D_wes/2;i++) // pierwsza połowa linii
+// dzielone przez 2 bo połowa, tak x+i-D_kow/2
+// bo trzeba przesunąc się w lewo o połowe długości linii
+{
+gotoxy(x+i-D_wes/2,y);
+cout&lt;&lt;"-";
+}
+
+for (int i=0;i&lt;=D_wes/2;i++) // pierwsza połowa linii
+// dzielone przez 2 bo połowa, tak x+i-D_kow/2
+// bo trzeba przesunąc się w lewo o połowe długości linii
+{
+gotoxy(x-i+D_wes/2,y);
+cout&lt;&lt;"-";
+}
+
+
+cout&lt;&lt;endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+
+
+</textarea>
+
+
+</body>
+</html>

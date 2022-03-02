@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>algo</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<ol type="1">
+		<li><h1>co to jest pogramowanie</h1><br>
+		Programowanie to proces składający się z etapów:<br>
+		a)tworzenia programu,<br>
+		b) testowanie programu.<br>
+		</li>
+		
+		<li><h1>omowic 2 reguly stosowane w jezykach programowania</h1><br>
+		Język programowania musi mieść określone:<br>
+		a)Reguły syntaktyczne -> reguły składni wyrażeń i funkcji użytych w programie,<br>
+		b)Reguły semantyczne -> semantyka języka programowania definiuje precyzyjnie znaczenie<br>
+		poszczególnych symboli (instrukcje, operatory itp.) oraz ich funkcję w programie.<br>
+		</li>
+		
+		<li><h1>omowic 2 definicje algorytmu</h1><br>
+		1 Algorytm -> jest to pewien ciąg czynności, który prowadzi do rozwiązania danego problemu
+		w skończonej ilości kroków.<br>
+		2 Algorytm -> to jednoznaczny przepis, opisujący krok po kroku sposób postępowania w celu
+		rozwiązania pewnego problemu lub sposobu osiągnięcia jakiegoś celu.
+		Ilość kroków algorytmu zależy od tego, jak złożony jest problem, którego on dotyczy. Zawsze
+		jednak liczba tych kroków będzie liczbą skończoną.
+		</li>
+		
+		<li><h1>cechy charakterystyczne poprawnego algorymu</h1><br>
+		1. Poprawność - dla każdego przypisanego zestawu danych, po wykonaniu skończonej
+		liczby czynności, algorytm prowadzi do poprawnych wyników.<br>
+		2. Jednoznaczność - w każdym przypadku zastosowania algorytmu dla tych samych
+		danych otrzymamy ten sam wynik.<br>
+		3. Szczegółowość - wykonawca algorytmu musi rozumieć opisane czynności i potrafić je
+		wykonywać.<br>
+		4. Uniwersalność - algorytm ma służyć rozwiązywaniu pewnej grupy zadań, a nie tylko
+		jednego zadania. Przykładowo algorytm na rozwiązywanie równań w postaci ax + b=0 ma je
+		rozwiązać dla dowolnych współczynników a i b, a nie tylko dla jednego konkretnego zadania,
+		np. 2x + 6 = 0<br>
+		5. Skończoność – dla każdego zbioru poprawnych danych wejściowych algorytm powinien
+		zwracać wyniki w skończonej liczbie kroków.<br>
+		6. Efektywność – algorytm powinien rozwiązywać problem w jak najmniejszej liczbie
+		kroków.<br>
+		</li>
+		
+		<li><h1>etapy konstruowania algorytmu</h1><br>
+		1. Sformułowanie zadania.<br>
+		2. Określenie danych wejściowych.<br>
+		3. Określenie wyniku oraz sposobu jego prezentacji.<br>
+		4. Ustalenie metody wykonania zadania.<br>
+		5. Przy użyciu wybranej metody następuje zapisanie algorytmu.<br>
+		6. Dokonujemy analizy poprawności rozwiązania.<br>
+		7. Testowanie rozwiązania dla różnych danych.<br>
+		8. Ocena skuteczności tegoż algorytmu.<br>
+		</li>
+		<br>
+		
+		<li><h1>etapy konstruowania algorytmu</h1><br>
+
+		<img src="sposoby.PNG" width="70%"/>
+		<img src="sposoby2.PNG" width="70%"/>
+		<img src="sposoby3.PNG" width="70%"/>
+		</li>
+		<br>
+		
+		<li><h1>elementy specyfikacji problemów</h1><br>
+		1.dane wejściowe<br>
+		2.dane wyjściowe oraz warunki jakie muszą spełniać (czyli związek pomiędzy danymi a 
+		wynikami).<br>
+		3.warunki jakie muszą spełniać dane wejściowe<br>
+		4.rysunki ( jeśli są konieczne), wzory obliczeniowe<br>
+
+		</li>
+		<br>
+		<li><h1>symbole</h1><br>
+		<img src="symbole.PNG" width="70%" />
+		</li>
+		<br>
+		
+		<li><h1>reguły rysowania schematów blokowych</h1><br>
+		I. Po zbudowaniu schematu blokowego nie powinno być takich strzałek, które z nikąd nie 
+		wychodzą, lub do nikąd nie dochodzą.<br>
+		II. Każdy schemat blokowy musi mieć tylko jeden element startowy oraz co najmniej jeden 
+		element końca algorytmu.<br>
+		III. Element łączący(strzałki łączące) powinien być rysowany w poziomie i pionie, załamania 
+		pod kątem prostym.<br>
+
+		</li>
+		<br>
+		
+		<li><h1>Podział algorytmów</h1><br>
+		<b>1.Definicja algorytmu liniowego</b>
+		Algorytmem liniowym nazywamy taki algorytm, który ma postać listy kroków 
+		wykonywanych zgodnie z ich kolejnością.
+		Algorytmy liniowe są zapisem obliczeń, które mają postać ciągu operacji rachunkowych 
+		wykonywanych bez sprawdzania jakichkolwiek warunków.
+		<br>
+		<b>2.Algorytm z warunkami (rozgałęzieniami)</b>
+		Ten typ algorytmu musi mieć bloki decyzyjne czyli bloki sprawdzania warunków.
+		<br>
+		<b>3.Algorytm numeryczne</b>
+		Algorytmy, które wykonują działania matematyczne na danych liczbowych, nazywamy 
+		algorytmami numerycznymi.
+		<br>
+		<b>4.Algorytm typu dziel i zwyciężaj</b>
+		Dzielimy problem na kilka mniejszych, a te znowu dzielimy, aż ich rozwiązania staną się 
+		oczywiste,
+		<br>
+		<b>5.Algorytmy iteracyjne</b>
+		Iteracja jest to zapętlenie algorytmu, czyli wykonywania danych działań, dopóki warunek 
+		iteracji nie zostanie spełniony. Jest ona podstawą wszystkich choć troszkę bardziej złożonych 
+		algorytmów. Zazwyczaj ma ona składnię wykonuj "jakaś czynność" dopóki "jakieś wyrażenie 
+		logiczne".
+		<br>
+		<b>6.Algorytmy rekurencyjne</b>
+		Rekurencje wykorzystuje się do rozwiązywania problemów gdzie powtarza się czynność aby 
+		do niego dojść. Swoim działaniem przypomina iteracje. Jednak w tym przypadku funkcja 
+		sama siebie wywołuje, dopóki nie otrzyma rozwiązania, natomiast tam mieliśmy 
+		powtórzenie pewnej czynności określoną ilość razy
+
+		</li>
+		<br>
+		
+		
+		<li><h1>Złożoności</h1><br>
+		Złożoność algorytmu- ilość zasobów potrzebnych do poprawnego działania danego 
+		algorytmu
+		<br><br>
+		Złożoności obliczeniowa-Algorytm wykonujący najmniejszą ilość operacji podstawowych w 
+		celu rozwiązania problemu.
+		<br><br>
+		Złożoność czasowa- Określa ilość operacji podstawowych potrzebnych do wykonania 
+		algorytmu o danej wielkości wejściowej.
+		<br><br>
+		Złożoność pamięciowa- Określa ilość przestrzeni pamięci wirtualnej potrzebnej do 
+		wykonania algorytmu z określonym zestawem danych wejściowych.
+		<br><br>
+		</li>
+		<br>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+	</ol>
+
+</body>
+</html>
